@@ -1,0 +1,6 @@
+---
+# vars file for my_clickhouse
+clickhouse_packages:
+  - clickhouse-client
+  - clickhouse-server
+  - clickhouse-common-static

@@ -1,0 +1,11 @@
+---
+# handlers file for my_clickhouse
+- name: Install Clickhouse
+  hosts: clickhouse
+  handlers:
+    - name: Start clickhouse service
+      become: true
+      ansible.builtin.service:
+        name: clickhouse-server
+        state: restarted
+        enabled: true
